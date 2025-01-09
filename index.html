@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activate Your Device with DisneyPlus.com/Begin</title>
+    <title>Installturbotax.com: Intuit TurboTax Software Download/title>
+        <meta name='description' content='Enter your 16-digit license code at Installturbotax.com to activate and download TurboTax.'>
+        <link rel="icon" type="image/png" href="DG_Logo.png">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5JXLBVZG4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S5JXLBVZG4');
+</script>
+
     <style>
         body {
             font-family: Occasion;
@@ -50,37 +63,141 @@
 </head>
 <body>
     <div class="container">
-       <h1><center>DisneyPlus.com/begin</center></h1> 
-        <div style="display: flex; justify-content: center;">  
-    <a href="https://disneyplus.com/begin" target="_blank" class="button" >Activate Now</a></div>
+       <h1><center>Installturbotax.com - Activate TurboTax with 16-Digit Code</center></h1> 
               
 <br><br>
-        <p>Disney+ offers a massive library of beloved movies, shows, and exclusive content. If you’re ready to start streaming on your device, follow these steps to activate Disney+ with DisneyPlus.com/Begin.</p>
 
-        <h2>What is DisneyPlus.com/Begin?</h2>
-        <p>DisneyPlus.com/Begin is a simple activation portal designed to help users set up Disney+ on various devices, such as smart TVs, tablets, or gaming consoles. It provides a fast way to link your Disney+ subscription to a compatible device and begin streaming immediately.</p>
+        <img src="activate-code.png"><br><br>
 
-        <h2>Requirements for Activating Disney+</h2>
-        <p>Before you start, make sure you have the following:</p>
-        <ul>
-            <li>A valid Disney+ subscription</li>
-            <li>An internet-connected device with the Disney+ app installed</li>
-            <li>Your Disney+ account credentials (email and password)</li>
-        </ul>
+        <p>Enter your 16-digit activation code at installturbotax.com to securely activate your TurboTax software and begin filing your taxes with ease. Follow the on-screen instructions for a seamless setup experience. </p>
+    <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install TurboTax</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0051a3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0051a3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003f7d;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Install TurboTax</h1>
+    </header>
+    <div class="container">
+        <h2>Enter Your License Code</h2>
+        <form id="licenseForm">
+            <div class="form-group">
+                <label for="licenseCode">License Code:</label>
+                <input type="text" id="licenseCode" name="licenseCode" placeholder="Enter your license code" required>
+            </div>
+            <button type="submit">Validate Code</button>
+        </form>
+        <div id="message" class="message" style="display: none;"></div>
+    </div>
 
-        <h2>How to Activate Your Device Using DisneyPlus.com/Begin?</h2>
-        <p>Follow these steps to activate Disney+ on your device:</p>
-        <ol>
-            <li>Open the Disney+ app on your device.</li>
-            <li>Log in to your Disney+ account if prompted.</li>
-            <li>Note the 8-digit code that appears on your screen.</li>
-            <li>On a computer or smartphone, visit DisneyPlus.com/Begin.</li>
-            <li>Enter the 8-digit code from your device and click "Continue."</li>
-        </ol>
-        <p>After completing these steps, your device should be linked to your Disney+ account, allowing you to start streaming.</p>
+    <script>
+        const licenseInput = document.getElementById('licenseCode');
+        const messageDiv = document.getElementById('message');
 
-        <h2>Enjoy Your Favorite Content on Disney+</h2>
-        <p>Once your device is activated, you can explore a huge selection of Disney, Marvel, Star Wars, Pixar, and National Geographic content. From timeless classics to new releases, Disney+ has something for everyone!</p>
+        // Add dashes automatically after every 4 digits
+        licenseInput.addEventListener('input', () => {
+            let value = licenseInput.value.replace(/-/g, ''); // Remove existing dashes
+            if (/^\d*$/.test(value)) { // Allow only numeric input
+                licenseInput.value = value.match(/.{1,4}/g)?.join('-') || ''; // Add dashes
+            } else {
+                licenseInput.value = licenseInput.value.slice(0, -1); // Remove invalid character
+            }
+        });
+
+        // Validate input on form submission
+        document.getElementById('licenseForm').addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+            const value = licenseInput.value.replace(/-/g, ''); // Remove dashes for validation
+
+            if (value.length === 16) {
+             window.open(
+                "https://installturbotax.tax/", "_blank");
+                
+            } else {
+                messageDiv.textContent = 'Invalid license code. Please enter exactly 16 digits.';
+                messageDiv.className = 'message error';
+                messageDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
+        
+        <p>To activate TurboTax with a 16-digit code, follow these steps:</p>
+<ol>
+    <li>Go to installturbotax.com</li>
+    <li>Enter your 16-digit license code.</li>
+    <li>Click "Continue" to proceed.</li>
+    <li>Sign in to your TurboTax account or create a new one.</li>
+    <li>Follow the prompts to download and install TurboTax.</li>
+    <li>Activate TurboTax using your license code.</li>
+</ol>
+        
     </div>
 </body>
 </html>
