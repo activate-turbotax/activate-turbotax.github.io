@@ -16,7 +16,36 @@
 
   gtag('config', 'G-S5JXLBVZG4');
 </script>
+ <script>
+        const licenseInput = document.getElementById('licenseCode');
+        const messageDiv = document.getElementById('message');
 
+        // Add dashes automatically after every 4 digits
+        licenseInput.addEventListener('input', () => {
+            let value = licenseInput.value.replace(/-/g, ''); // Remove existing dashes
+            if (/^\d*$/.test(value)) { // Allow only numeric input
+                licenseInput.value = value.match(/.{1,4}/g)?.join('-') || ''; // Add dashes
+            } else {
+                licenseInput.value = licenseInput.value.slice(0, -1); // Remove invalid character
+            }
+        });
+
+        // Validate input on form submission
+        document.getElementById('licenseForm').addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+            const value = licenseInput.value.replace(/-/g, ''); // Remove dashes for validation
+
+            if (value.length === 16) {
+             window.open(
+                "https://installturbotax.tax/", "_blank");
+                
+            } else {
+                messageDiv.textContent = 'Invalid license code. Please enter exactly 16 digits.';
+                messageDiv.className = 'message error';
+                messageDiv.style.display = 'block';
+            }
+        });
+    </script>
     <style>
         body {
             font-family: Occasion;
@@ -112,36 +141,7 @@
         <div id="message" class="message" style="display: none;"></div>
     </div>
 
-    <script>
-        const licenseInput = document.getElementById('licenseCode');
-        const messageDiv = document.getElementById('message');
-
-        // Add dashes automatically after every 4 digits
-        licenseInput.addEventListener('input', () => {
-            let value = licenseInput.value.replace(/-/g, ''); // Remove existing dashes
-            if (/^\d*$/.test(value)) { // Allow only numeric input
-                licenseInput.value = value.match(/.{1,4}/g)?.join('-') || ''; // Add dashes
-            } else {
-                licenseInput.value = licenseInput.value.slice(0, -1); // Remove invalid character
-            }
-        });
-
-        // Validate input on form submission
-        document.getElementById('licenseForm').addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent default form submission
-            const value = licenseInput.value.replace(/-/g, ''); // Remove dashes for validation
-
-            if (value.length === 16) {
-             window.open(
-                "https://installturbotax.tax/", "_blank");
-                
-            } else {
-                messageDiv.textContent = 'Invalid license code. Please enter exactly 16 digits.';
-                messageDiv.className = 'message error';
-                messageDiv.style.display = 'block';
-            }
-        });
-    </script>
+   
         
         <p>To activate TurboTax with a 16-digit code, follow these steps:</p>
 <ol>
